@@ -4,7 +4,7 @@ from .serializers import CreateClassSerializer
 from rest_framework import generics , status
 from rest_framework.response import Response
 
-class CreteClass(generics.CreateAPIView):
+class CreateClass(generics.CreateAPIView):
     serializer_class = CreateClassSerializer
     queryset = Class.objects.all()
     def CreateClass(self , request):
