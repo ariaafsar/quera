@@ -6,6 +6,6 @@ class Class(models.Model):
     creator = models.ForeignKey(Account , on_delete=models.PROTECT)
     teachers = models.ManyToManyField(Account , related_name='teacher')
     students = models.ManyToManyField(Account , related_name='student')
-    password = models.CharField(max_length=100 , min_length = 8)
+    password = models.CharField(max_length=100)
 
 # Create your models here.
