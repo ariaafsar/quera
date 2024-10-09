@@ -6,4 +6,7 @@ from rest_framework.permissions import IsAuthenticated
 
 class Login(TokenObtainPairView):
     pass
+
+class Refresh(TokenRefreshView):
+    pass
 # Create your views here.
