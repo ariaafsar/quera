@@ -7,5 +7,9 @@ class Class(models.Model):
     teachers = models.ManyToManyField(Account , related_name='teacher')
     students = models.ManyToManyField(Account , related_name='student')
     password = models.CharField(max_length=100)
+    privecy = models.CharField(max_length=100)
 
+
+    def __str__(self):
+        return self.title
 # Create your models here.
